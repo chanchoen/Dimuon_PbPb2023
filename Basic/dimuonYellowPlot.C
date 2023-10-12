@@ -189,8 +189,8 @@ void dimuonYellowPlot(bool isAA=true,
 
   latex->DrawLatex(0.7,0.7,Form("p_{T}^{#mu#mu} > %.0f GeV/c",ptMu));
 
-  yellowPlot->SaveAs(Form("%s_ptMu%.0f_isAA%d_isPA%d_isPP%d_hasComp%d_hasLogo%d.pdf",yellowPlot->GetTitle(),ptMu,isAA,isPA,isPP,doSameXXCompare,addLogo));
-  yellowPlot->SaveAs(Form("%s_ptMu%.0f_isAA%d_isPA%d_isPP%d_hasComp%d_hasLogo%d.png",yellowPlot->GetTitle(),ptMu,isAA,isPA,isPP,doSameXXCompare,addLogo));
+  yellowPlot->SaveAs(Form("%s_ptMu%.0f_isAA%d_hasLogo%d.pdf",yellowPlot->GetTitle(),ptMu,isAA,addLogo));
+  yellowPlot->SaveAs(Form("%s_ptMu%.0f_isAA%d_hasLogo%d.png",yellowPlot->GetTitle(),ptMu,isAA,addLogo));
   //-----------------------------------
   // TCanvas* pc1 = new TCanvas("pc1","pc1");
   // phMain->Divide(phComp);
